@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Mi primer script</title>
+
+<script type="text/javascript">
+function info(cadena) {
+
+  var resultado = "La cadena \""+cadena+"\" ";
+
+  // Comprobar mayúsculas y minúsculas
+  if(cadena == cadena.toUpperCase()) {
+    resultado += " está formada sólo por mayúsculas";
+  }
+  else if(cadena == cadena.toLowerCase()) {
+    resultado += " está formada sólo por minúsculas";
+  }
+  else {
+    resultado += " está formada por mayúsculas y minúsculas";
+  }
+
+  return resultado;
+}
+
+alert(info("HolA qUe AsEs"));
+alert(info("como va la vida uwu"));
+alert(info("AAAAAAAA QUE TAAAAAAAAAL"));
+</script>
+</head>
+
+<body>
+</body>
+</html>
